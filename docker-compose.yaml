@@ -1,0 +1,47 @@
+
+version: '3' #docker version 
+
+services:
+  backend: 
+    image: "php:7.2-apache"
+    volumes:
+      - "./:/var/backend/html"
+    ports:
+      - 8080:8080
+      - 443:443
+      
+  db: 
+    container_name: NK-backend
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=NanaKats
+      - MYSQL_USER=hannahdev
+      - MYSQL_PASSWORD=nananakats14
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+      - SYSTEM_VARIABLES_ADMIN = 1
+    volumes:
+      - "./db:/docker-entrypoint-initdb.d" # for persist db 
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8001:80
+    environment:
+      - PHP_HOST=db 
+      - PHP_PORT=3306j
+
+  # frontend:
+    
+  #   ports:
+  #     - "8080:8080"
+  #   entrypoint: npm start
+
+        
+      
+    # expose:
+    #   - 8080
+
+    # ports:  # outside world -> localhost:8080
+    #   - 8080:8080
+    # volumes:
+    #   - "./:/var/lib/mysql"

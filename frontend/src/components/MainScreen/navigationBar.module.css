@@ -1,0 +1,72 @@
+/* Navigation Bar */
+.background {
+    background-image: url('../../../public/images/Botany\ element\ 5.png');
+    position: absolute;
+    width: 100%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+.sideBar {
+    position: absolute;
+    background-color: peachpuff;
+    width: 20vw;
+    height: 100vh;
+}
+
+.profile {
+    position: inherit;
+    top: 10vh;
+    width: inherit;
+    margin: 10px;
+
+    /* background-color: purple; */
+}
+
+.profile h1{
+    margin-bottom: 10px;
+}
+
+.profile button {
+    position: relative;
+    width: 4vw;
+    height: 5vh;
+    left: 15vw;
+    background-color: inherit;
+    border:  none;
+    border-radius: 70px;
+}
+
+.profile button:hover {
+    background-color: #f4a688;
+}
+
+.logo {
+    position: inherit;
+    width: 20vw;
+    height: 10vh;
+}
+
+.tabs {
+    background-color: inherit;
+    top: 25vh;
+}
+
+
+.tabs button {
+    position: inherit;
+    background-color: transparent;
+    width: 20vw;
+    margin-bottom: 5px;
+    border: none;
+    
+    align-items: center;
+    font-size: 30px;
+    text-align: left;
+}
+
+.tabs button:hover {
+    background-color: #f9ccac;
+    text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+form {
+    position: absolute;
+    top: 0vh;
+}
+
+div {
+    position: absolute;
+}
+
+h1 {    
+    position: absolute;
+}
+
+h3 {
+    position: inherit;
+}
+
+input {
+    position: absolute;
+}
+
+button {
+    position: absolute;
+}
+
+table {
+    background-color: #f9ccac;
+}
+
+tr {
+    position: absolute;
+    top: 5vh;
+    left: 25vw;
+    width: 80vw;
+    height: 100vh;
+
+    background-color: #f9ccac;
+}
+
+th {
+    position: inherit;
+    width: 5vw;
+    height: 3vh;
+    margin-right: 10px;
+
+    font-size: 28px;
+    border-right: 2px solid grey;
+}

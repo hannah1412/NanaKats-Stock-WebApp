@@ -1,0 +1,62 @@
+
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: auto;
+    background-image: url('../../../public/images/green-grunge-paper-background.jpeg');
+}
+
+.form, .title_text, .button {
+    background-color: bisque;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 60%;
+    height: 100%;
+    border-radius: 10%;
+    border-width: 15px;
+    border-color: black;
+    opacity: 70%;
+}
+
+.title_text {
+    position: relative;
+    top: 5%;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* can be global  CSS */
+.input, input.short_text {
+    background-color: rgb(204, 210, 204);
+    position: inherit;
+    width: 50%;
+    height: 3%;
+
+    opacity: 75%;
+    border-color: rgb(176, 216, 82);
+    border-radius: 5%;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input.short_text {
+    width: 50%;
+}
+
+.button {
+  background-color: rgb(208, 152, 29);
+  position: absolute;
+  top: 85%;
+  left: 60%;
+  width: 30%;
+  height: 10%;
+
+  border-width: 0px;
+  opacity: 100%;
+  border-radius: 50%;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
